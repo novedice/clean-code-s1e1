@@ -136,7 +136,7 @@ input,
 }
 
 /* Completed */
-#list-item-completed {
+.list-item-completed {
   text-decoration: line-through;
   color: #888;
 }
