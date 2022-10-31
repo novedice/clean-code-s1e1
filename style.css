@@ -2,7 +2,7 @@
 body {
   margin: 0;    
 }
-.all-app-wrapper {
+.app-wrapper {
   background-color: #f8f8f8;
   color: #333;
   font-family: lato, sans-serif;
@@ -14,10 +14,10 @@ body {
   display: block;
   text-align: right;
 }
-.matrix-eisenhower img {
+#matrix-img {
   width: 100%;
 }
-.matrix-eisenhower .more_inf {
+.more_inf {
   font-family: fantasy, cursive;
 }
 
@@ -28,7 +28,7 @@ body {
   }
 
 }
-.centered-main-page-element {
+.main-part {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -126,12 +126,12 @@ input,
 .enter-task {
   width: 226px;
 }
-.delete img {
+.delete-btn-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.delete-btn-img:hover {
   transform: rotateZ(0);
 }
 
