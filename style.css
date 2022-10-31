@@ -8,22 +8,22 @@ body {
   font-family: lato, sans-serif;
   width: 100%;
 }
-.aaa {
+.matrix-eisenhower {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.matrix-eisenhower img {
   width: 100%;
 }
-.aaa .more_inf {
+.matrix-eisenhower .more_inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa { 
+  .matrix-eisenhower { 
     text-align: center;
   }
 
