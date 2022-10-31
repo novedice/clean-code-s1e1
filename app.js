@@ -47,6 +47,13 @@ var createNewTaskElement=function(taskString){
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
+    listItem.classList.add("list-item");
+    checkBox.classList.add("checkboxes");
+    label.classList.add("labels");
+    editInput.classList.add("enter-task");
+    editButton.classList.add("buttons");
+    deleteButton.classList.add("buttons");
+    
 
     //and appending.
     listItem.appendChild(checkBox);
@@ -92,10 +99,14 @@ var editTask=function(){
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText=editInput.value;
+        label.id = null;
+        editInput.id = null;
         editBtn.innerText="Edit";
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
+        label.id = "edit-mode-label";
+        editInput.id = "edit-mode-input";
     }
 
     //toggle .editmode on the parent.
@@ -122,6 +133,7 @@ var taskCompleted=function(){
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
+    listItem.id = "list-item-completed";
     bindTaskEvents(listItem, taskIncomplete);
 
 }
@@ -134,6 +146,7 @@ var taskIncomplete=function(){
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
+    listItem.id = null;
     bindTaskEvents(listItem,taskCompleted);
 }
 
